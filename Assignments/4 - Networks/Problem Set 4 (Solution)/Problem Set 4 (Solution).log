@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  2 NOV 2021 16:41
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  3 NOV 2021 13:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1672,15 +1672,25 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@algorithm=\count351
 )
-(/usr/local/texlive/2021/texmf-dist/tex/latex/algorithms/algorithmic.sty
-Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count352
-\c@ALC@line=\count353
-\c@ALC@rem=\count354
-\c@ALC@depth=\count355
-\ALC@tlm=\skip93
-\algorithmicindent=\skip94
+(/usr/local/texlive/2021/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count352
+\c@ALG@rem=\count353
+\c@ALG@nested=\count354
+\ALG@tlm=\skip93
+\ALG@thistlm=\skip94
+\c@ALG@Lnr=\count355
+\c@ALG@blocknr=\count356
+\c@ALG@storecount=\count357
+\c@ALG@tmpcounter=\count358
+\ALG@tmplength=\skip95
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
@@ -1704,9 +1714,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box128
 \tcb@lowerbox=\box129
 \tcb@phantombox=\box130
-\c@tcbbreakpart=\count356
-\c@tcblayer=\count357
-\c@tcolorbox@number=\count358
+\c@tcbbreakpart=\count359
+\c@tcblayer=\count360
+\c@tcolorbox@number=\count361
 \tcb@temp=\box131
 \tcb@temp=\box132
 \tcb@temp=\box133
@@ -1716,9 +1726,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '4.42'
-\c@tcbrastercolumn=\count359
-\c@tcbrasterrow=\count360
-\c@tcbraster=\count361
+\c@tcbrastercolumn=\count362
+\c@tcbrasterrow=\count363
+\c@tcbraster=\count364
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '4.42'
 \tcb@waterbox=\box135
@@ -1746,7 +1756,7 @@ Library (tcolorbox): 'tcbfitting.code.tex' version '4.42'
 \tcbfitdim=\dimen340
 \tcb@lowerfitdim=\dimen341
 \tcb@upperfitdim=\dimen342
-\tcb@cur@hbadness=\count362
+\tcb@cur@hbadness=\count365
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
 Library (tcolorbox): 'tcbxparse.code.tex' version '4.42'
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -1757,14 +1767,14 @@ Package: expl3 2021-02-18 L3 programming layer (loader)
 File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
 
 (|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count363
-\l__color_backend_stack_int=\count364
-\g__color_backend_stack_int=\count365
-\g__graphics_track_int=\count366
+\c__kernel_sys_dvipdfmx_version_int=\count366
+\l__color_backend_stack_int=\count367
+\g__color_backend_stack_int=\count368
+\g__graphics_track_int=\count369
 \l__pdf_internal_box=\box139
-\g__pdf_backend_object_int=\count367
-\g__pdf_backend_annotation_int=\count368
-\g__pdf_backend_link_int=\count369
+\g__pdf_backend_object_int=\count370
+\g__pdf_backend_annotation_int=\count371
+\g__pdf_backend_link_int=\count372
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-
 01.sty
@@ -1777,9 +1787,9 @@ Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 ))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip95
-\L@UnitsRaiseTextstyle=\skip96
-\L@UnitsRaiseScriptstyle=\skip97
+\L@UnitsRaiseDisplaystyle=\skip96
+\L@UnitsRaiseTextstyle=\skip97
+\L@UnitsRaiseScriptstyle=\skip98
 )
 (/usr/local/texlive/2021/texmf-dist/tex/generic/oberdiek/iflang.sty
 Package: iflang 2018/01/21 v1.7 Checks for the current language (HO)
@@ -1791,10 +1801,10 @@ Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
 (/usr/local/texlive/2021/texmf-dist/tex/latex/nextpage/nextpage.sty
 Package: nextpage 2009/09/03 v1.1a additional page commands
 )
-\beforeepigraphskip=\skip98
-\afterepigraphskip=\skip99
-\epigraphwidth=\skip100
-\epigraphrule=\skip101
+\beforeepigraphskip=\skip99
+\afterepigraphskip=\skip100
+\epigraphwidth=\skip101
+\epigraphrule=\skip102
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/qtree/qtree.sty
 Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
@@ -1821,8 +1831,8 @@ File: p2e-xetex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \pIIe@tempdime=\dimen349
 \pIIe@tempdimf=\dimen350
 )
-\c@treecount=\count370
-\c@branchcount=\count371
+\c@treecount=\count373
+\c@branchcount=\count374
 \parentbox=\box140
 \treebox=\box141
 \treeboxone=\box142
@@ -1845,85 +1855,85 @@ File: p2e-xetex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \treeboxeighteen=\box159
 \treeboxnineteen=\box160
 \treeboxtwenty=\box161
-\treeoffsetone=\skip102
-\treeoffsettwo=\skip103
-\treeoffsetthree=\skip104
-\treeoffsetfour=\skip105
-\treeoffsetfive=\skip106
-\treeoffsetsix=\skip107
-\treeoffsetseven=\skip108
-\treeoffseteight=\skip109
-\treeoffsetnine=\skip110
-\treeoffsetten=\skip111
-\treeoffseteleven=\skip112
-\treeoffsettwelve=\skip113
-\treeoffsetthirteen=\skip114
-\treeoffsetfourteen=\skip115
-\treeoffsetfifteen=\skip116
-\treeoffsetsixteen=\skip117
-\treeoffsetseventeen=\skip118
-\treeoffseteighteen=\skip119
-\treeoffsetnineteen=\skip120
-\treeoffsettwenty=\skip121
-\treeshiftone=\skip122
-\treeshifttwo=\skip123
-\treeshiftthree=\skip124
-\treeshiftfour=\skip125
-\treeshiftfive=\skip126
-\treeshiftsix=\skip127
-\treeshiftseven=\skip128
-\treeshifteight=\skip129
-\treeshiftnine=\skip130
-\treeshiftten=\skip131
-\treeshifteleven=\skip132
-\treeshifttwelve=\skip133
-\treeshiftthirteen=\skip134
-\treeshiftfourteen=\skip135
-\treeshiftfifteen=\skip136
-\treeshiftsixteen=\skip137
-\treeshiftseventeen=\skip138
-\treeshifteighteen=\skip139
-\treeshiftnineteen=\skip140
-\treeshifttwenty=\skip141
-\treewidthone=\skip142
-\treewidthtwo=\skip143
-\treewidththree=\skip144
-\treewidthfour=\skip145
-\treewidthfive=\skip146
-\treewidthsix=\skip147
-\treewidthseven=\skip148
-\treewidtheight=\skip149
-\treewidthnine=\skip150
-\treewidthten=\skip151
-\treewidtheleven=\skip152
-\treewidthtwelve=\skip153
-\treewidththirteen=\skip154
-\treewidthfourteen=\skip155
-\treewidthfifteen=\skip156
-\treewidthsixteen=\skip157
-\treewidthseventeen=\skip158
-\treewidtheighteen=\skip159
-\treewidthnineteen=\skip160
-\treewidthtwenty=\skip161
-\daughteroffsetone=\skip162
-\daughteroffsettwo=\skip163
-\daughteroffsetthree=\skip164
-\daughteroffsetfour=\skip165
-\branchwidthone=\skip166
-\branchwidthtwo=\skip167
-\branchwidththree=\skip168
-\branchwidthfour=\skip169
-\parentoffset=\skip170
-\treeoffset=\skip171
-\daughteroffset=\skip172
-\branchwidth=\skip173
-\parentwidth=\skip174
-\treewidth=\skip175
+\treeoffsetone=\skip103
+\treeoffsettwo=\skip104
+\treeoffsetthree=\skip105
+\treeoffsetfour=\skip106
+\treeoffsetfive=\skip107
+\treeoffsetsix=\skip108
+\treeoffsetseven=\skip109
+\treeoffseteight=\skip110
+\treeoffsetnine=\skip111
+\treeoffsetten=\skip112
+\treeoffseteleven=\skip113
+\treeoffsettwelve=\skip114
+\treeoffsetthirteen=\skip115
+\treeoffsetfourteen=\skip116
+\treeoffsetfifteen=\skip117
+\treeoffsetsixteen=\skip118
+\treeoffsetseventeen=\skip119
+\treeoffseteighteen=\skip120
+\treeoffsetnineteen=\skip121
+\treeoffsettwenty=\skip122
+\treeshiftone=\skip123
+\treeshifttwo=\skip124
+\treeshiftthree=\skip125
+\treeshiftfour=\skip126
+\treeshiftfive=\skip127
+\treeshiftsix=\skip128
+\treeshiftseven=\skip129
+\treeshifteight=\skip130
+\treeshiftnine=\skip131
+\treeshiftten=\skip132
+\treeshifteleven=\skip133
+\treeshifttwelve=\skip134
+\treeshiftthirteen=\skip135
+\treeshiftfourteen=\skip136
+\treeshiftfifteen=\skip137
+\treeshiftsixteen=\skip138
+\treeshiftseventeen=\skip139
+\treeshifteighteen=\skip140
+\treeshiftnineteen=\skip141
+\treeshifttwenty=\skip142
+\treewidthone=\skip143
+\treewidthtwo=\skip144
+\treewidththree=\skip145
+\treewidthfour=\skip146
+\treewidthfive=\skip147
+\treewidthsix=\skip148
+\treewidthseven=\skip149
+\treewidtheight=\skip150
+\treewidthnine=\skip151
+\treewidthten=\skip152
+\treewidtheleven=\skip153
+\treewidthtwelve=\skip154
+\treewidththirteen=\skip155
+\treewidthfourteen=\skip156
+\treewidthfifteen=\skip157
+\treewidthsixteen=\skip158
+\treewidthseventeen=\skip159
+\treewidtheighteen=\skip160
+\treewidthnineteen=\skip161
+\treewidthtwenty=\skip162
+\daughteroffsetone=\skip163
+\daughteroffsettwo=\skip164
+\daughteroffsetthree=\skip165
+\daughteroffsetfour=\skip166
+\branchwidthone=\skip167
+\branchwidthtwo=\skip168
+\branchwidththree=\skip169
+\branchwidthfour=\skip170
+\parentoffset=\skip171
+\treeoffset=\skip172
+\daughteroffset=\skip173
+\branchwidth=\skip174
+\parentwidth=\skip175
+\treewidth=\skip176
 \qta=\toks58
 \qtb=\toks59
-\nbranches=\count372
-\qroofx=\count373
-\qroofy=\count374
+\nbranches=\count375
+\qroofx=\count376
+\qroofy=\count377
 \@qrscratchbox=\box162
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
@@ -1938,12 +1948,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen358
 \cmidrulekern=\dimen359
 \defaultaddspace=\dimen360
-\@cmidla=\count375
-\@cmidlb=\count376
+\@cmidla=\count378
+\@cmidlb=\count379
 \@aboverulesep=\dimen361
 \@belowrulesep=\dimen362
-\@thisruleclass=\count377
-\@lastruleclass=\count378
+\@thisruleclass=\count380
+\@lastruleclass=\count381
 \@thisrulewidth=\dimen363
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/pifont.sty
@@ -1960,26 +1970,26 @@ LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-\c@prop=\count379
-\c@cor=\count380
-\c@corp=\count381
-\c@corl=\count382
-\c@obst=\count383
-\c@obsc=\count384
-\c@obscl=\count385
-\c@obscp=\count386
-\c@obsl=\count387
-\c@obsd=\count388
-\c@obspr=\count389
-\c@obsp=\count390
-\c@obsej=\count391
-\c@obsex=\count392
+\c@prop=\count382
+\c@cor=\count383
+\c@corp=\count384
+\c@corl=\count385
+\c@obst=\count386
+\c@obsc=\count387
+\c@obscl=\count388
+\c@obscp=\count389
+\c@obsl=\count390
+\c@obsd=\count391
+\c@obspr=\count392
+\c@obsp=\count393
+\c@obsej=\count394
+\c@obsex=\count395
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/sttools/stfloats.sty
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
 ings
-\@dblbotnum=\count393
-\c@dblbotnumber=\count394
+\@dblbotnum=\count396
+\c@dblbotnumber=\count397
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
@@ -1991,9 +2001,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count395
-\Gm@cntv=\count396
-\c@Gm@tempcnt=\count397
+\Gm@cnth=\count398
+\Gm@cntv=\count399
+\c@Gm@tempcnt=\count400
 \Gm@bindingoffset=\dimen364
 \Gm@wd@mp=\dimen365
 \Gm@odd@mp=\dimen366
@@ -2012,7 +2022,12 @@ LaTeX Font Info:    Trying to load font information for T1+ppl on input line 33
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-No file "Problem Set 4 (Solution)".aux.
+(./Problem Set 4 (Solution).aux
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+)
 \openout1 = `"Problem Set 4 (Solution).aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -2026,6 +2041,7 @@ LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
 3.
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -2052,17 +2068,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count398
+\c@section@level=\count401
 )
 LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
 LaTeX Info: Redefining \nameref on input line 33.
+ (./Problem Set 4 (Solution).out) (./Problem Set 4 (Solution).out)
 \@outlinefile=\write7
 \openout7 = `"Problem Set 4 (Solution).out"'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
@@ -2078,6 +2091,7 @@ LaTeX Info: Redefining \. on input line 33.
 LaTeX Info: Redefining \% on input line 33.
 Package cleveref Info: loaded `spanish' language definitions on input line 33.
 Package cleveref Info: loaded `english' language definitions on input line 33.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -2165,9 +2179,22 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-) [1
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 41.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 41.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 41.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 41.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 41.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 41.
+ [1
 
-]
+] [2]
 (./Problem Set 4 (Solution).aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
@@ -2185,12 +2212,12 @@ ged.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 35683 strings out of 476919
- 670167 string characters out of 5821839
- 1078076 words of memory out of 5000000
- 54952 multiletter control sequences out of 15000+600000
- 428235 words of font info for 92 fonts, out of 8000000 for 9000
+ 36107 strings out of 476919
+ 676596 string characters out of 5821839
+ 1093698 words of memory out of 5000000
+ 55350 multiletter control sequences out of 15000+600000
+ 442144 words of font info for 137 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,6n,117p,480b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105i,6n,117p,1250b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Problem Set 4 (Solution).pdf (1 page).
+Output written on Problem Set 4 (Solution).pdf (2 pages).
