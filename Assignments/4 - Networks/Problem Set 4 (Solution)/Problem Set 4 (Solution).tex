@@ -54,32 +54,116 @@ Now consider that, instead, a researcher is interested in determining which arti
 
 \section*{Problem 4.2: Co-offending Network}
 
-For part (a),
+\textit{Note: The dataset provided for this question has been altered in such a way that is is unrecognizable from the original.}\vspace{1.5ex}
 
-For part (b),
+The original dataset contains 1,4565,786 observations, each at the \texttt{offender\_id}-\texttt{event\_id}-\texttt{crime\_code} level. This is, each observation is a unique person, arrested at a given crime event, and charged with a given crime. Note that at any given crime event, the offender can be charged several different crimes. Within, the number of unique offenders is 538,851, and the number of different crime events are 1,163,423, which occurred between 1997 and 2004, according to \Cref{tab:crimes-per-year}. 
 
-For part (c),
+In terms of crimes, there is a total of 301 different crime codes. The 5 crimes that occurred the the most are shown in \Cref{tab:notorious-crimes}. Together, they comprise a total of 516,876 perpetrators, and correspond to, approximately, 35\% of the sample. In terms of crimes in general, there is high variability. Moreover, a great number of crimes have low occurrences, as can be seen in \Cref{fig:total-offenses-per-crime-full}. To gain more insight, the sample is restricted to crimes with less or equal than 5,000 offenders. For reference, the average number of offenders per crime is, approximately, 4,869. With this, of the 294 different codes, 254 (86.3\%) remain. The result can be seen in \Cref{fig:total-offenses-per-crime-small}. The plot changes slightly. Most of the codes have little offenders and, among the rest, there is high variability.
 
-For part (d),
+In terms of location, these five most notorious crimes occur mainly in county 682. This could be due to 682 being the most populated county in the database. The details can be found in \Cref{tab:notorious-crimes-county}. The table shows that, for crime 131, this county accounts for 84,952 offenders. This corresponds to, approximately, 78.63\% of all offenders arrested for this crime. The rest of the crimes present a share in county 684 that is large, but much smaller than for crime 131, round between 20\% and 29\%. To further see the relevance of this county, \Cref{tab:notorious-crimes-uniform-distribution} shows, for each crime, in how many different counties it was detected. Additionally, the table shows the contribution each county should have if crimes occurred evenly in each one. This contribution is computed as follows:
+  $$ \text{Contribution}_{\,\text{crime}} = \frac{100}{\text{\# Different counties}_{\,\text{crime}}} $$
+This table shows how concentrated is the distribution of crimes in county 682. In particular, it can be seen that crime 131 is present in almost a half of counties in which the rest of the crimes are. This can explain the abrupt jump in contribution in \Cref{tab:notorious-crimes-county}. 
 
-For part (e),
 
-For part (f),
+ 
 
-For part (g),
+\begin{table*}
+	\caption{Number of arrests per year}
+	\label{tab:crimes-per-year}
+	\centering
+	\begin{tabular}{cc}
+		\hline\hline
+		\\[-1.5ex]
+		Year	&	Number of arrests	\\[0.5ex]\hline
+		\\[-1.5ex]
+		1997	&	\hspace{1ex}22,404	\\[0.2ex]
+		1998	&	142,582				\\[0.2ex]
+		1999	&	163,346				\\[0.2ex]
+		2000	&	220,197				\\[0.2ex]
+		2001	&	234,495				\\[0.2ex]
+		2002	&	246,397				\\[0.2ex]
+		2003	&	251,298				\\[0.2ex]
+		2004	&	185,067				\\[0.5ex]
+		\hline\hline
+	\end{tabular}
+	
 
-For part (h),
+\end{table*}
 
-For part (i),
+\begin{table*}
+	\caption{Crime codes with most offenses. Only the top five are shown. The last row shows the total offenses for these five crimes.}
+	\label{tab:notorious-crimes}
+	\centering
+	\begin{tabular}{cc}
+		\hline\hline
+		\\[-1.5ex]
+		Crime code		&	Number of offenses	\\[0.5ex]\hline
+		\\[-1.5ex]
+		22				&	140,901	\\[0.2ex]
+		131				&	108,031				\\[0.2ex]
+		61				&	\hspace{1ex}94,655	\\[0.2ex]
+		39				&	\hspace{1ex}90,179	\\[0.2ex]
+		73				&	\hspace{1ex}83,110	\\[0.2ex]\hline
+		\\[-2ex]
+		\textbf{Total}	&	\textbf{516,876}	\\[0.5ex]
+		\hline\hline
+	\end{tabular}
 
-For part (j),
+\end{table*}
 
-For part (k),
+\begin{figure*}
+	\caption{Total offenses per crime code. In panel (a), all crime codes are considered. In panel (b), only crime codes with a number offenses lower or equal to 5,000. For perspective, the average number of offenses per crime code is 4,869.}
+	\centering
+	\label{fig:total-offenses-per-crime}
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\caption{All crimes}
+		\label{fig:total-offenses-per-crime-full}
+		\includegraphics[width=0.9\textwidth]{total-offenses-per-crime-full}
+	\end{subfigure}\hfill
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\caption{Crimes with 5,000 offenses or less}
+		\label{fig:total-offenses-per-crime-small}
+		\includegraphics[width=0.9\textwidth]{example-image-b}
+	\end{subfigure}
+\end{figure*}
 
-For part (l),
+\begin{table*}
+	\caption{Most notorious crimes and their occurrence in county 682. Column ``Total offenses'' is taken from \Cref{tab:notorious-crimes}. Column ``Contribution'' is the percentage of offenses that occur in county 682.}
+	\label{tab:notorious-crimes-county}
+	\centering
+	\begin{tabular}{cccc}
+		\hline\hline
+		\\[-1.5ex]
+		Crime code		&	Offenses in county 682	&	Total offenses		&	Contribution	\\[0.5ex]\hline
+		\\[-1.5ex]
+		131				&	84,952					&	108,031				&	78.63\%			\\[0.2ex]
+		22				&	28,247					&	140,901				&	20.05\%			\\[0.2ex]
+		61				&	24,101					&	\hspace{1ex}94,655	&	25.46\%			\\[0.2ex]
+		73				&	23,743					&	\hspace{1ex}83,110	&	28.57\%			\\[0.2ex]
+		39				&	21,698					&	\hspace{1ex}90,179	&	24.06\%			\\[0.5ex]
+		\hline\hline
+	\end{tabular}
+\end{table*}
 
-For part (m),
-  
+\begin{table*}
+	\caption{Most notorious crimes and number of counties they occur in. Column ``Uniform contribution'' represents the contribution of each county if all occurrences where evenly distributed among counties.}
+	\label{tab:notorious-crimes-uniform-distribution}
+	\centering
+	\begin{tabular}{ccc}
+		\hline\hline
+		\\[-1.5ex]
+		Crime code		&	Number of different counties	&	Uniform contribution	\\[0.5ex]\hline
+		\\[-1.5ex]
+		131				&	\hspace{1ex}\,652				&	0.15\%			\\[0.2ex]
+		22				&	1,228							&	0.08\%			\\[0.2ex]
+		61				&	1,084							&	0.09\%			\\[0.2ex]
+		73				&	1,099							&	0.09\%			\\[0.2ex]
+		39				&	1,212							&	0.08\%			\\[0.5ex]
+		\hline\hline
+	\end{tabular}
+\end{table*}
 
 \end{multicols}
 \end{document}

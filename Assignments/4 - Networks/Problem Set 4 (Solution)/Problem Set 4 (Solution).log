@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  3 NOV 2021 13:25
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  15 NOV 2021 10:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2194,7 +2194,18 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 41.
  [1
 
-] [2]
+]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
+9.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+File: example-image-b.pdf Graphic file (type pdf)
+<use example-image-b.pdf>
+ [2] [3] [4]
 (./Problem Set 4 (Solution).aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
@@ -2212,12 +2223,12 @@ ged.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 36107 strings out of 476919
- 676596 string characters out of 5821839
- 1093698 words of memory out of 5000000
- 55350 multiletter control sequences out of 15000+600000
- 442144 words of font info for 137 fonts, out of 8000000 for 9000
+ 36204 strings out of 476919
+ 678633 string characters out of 5821839
+ 1105698 words of memory out of 5000000
+ 55437 multiletter control sequences out of 15000+600000
+ 446993 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,6n,117p,1250b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105i,8n,117p,1250b,693s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Problem Set 4 (Solution).pdf (2 pages).
+Output written on Problem Set 4 (Solution).pdf (4 pages).
