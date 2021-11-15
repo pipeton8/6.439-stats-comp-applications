@@ -70,6 +70,7 @@ The degree distribution of this network is particular. In \Cref{fig:degree-distr
  
 To shed some light about the cumulative distribution of degrees of this network, \Cref{tab:cumulative-degree-distribution} shows the total of nodes with degree at most $d$, for different values of $d$. For reference, the total number of nodes with positive degree is 121,119. As can be seen from the table, almost the entire network (in terms of connected nodes) has degree at most 20, with 98.36\% of all nodes. This means that the right tail is not so heavy. The cumulative distribution is shown in \Cref{fig:cumulative-degree-distribution}.
 
+Now the attention is drawn to the connected components of the network. This network has 36,086 connected components. The smallest one has 2 nodes, while the largest one comprises 19,921 nodes. The latter is, approximately, a 16.45\% of all nodes with positive degree. This largest connected component may include some big criminal organization, and therefore is worth studying separately. Focusing on this largest connected component, the first step is to review the degree distribution. Interestingly, for this sub-network, the degree distribution does not follow a power-law distribution, although there seems to be two linear segments: from degrees 1 to 3, and from degrees 3 to 20. This can be seen in \Cref{fig:degree-distribution-CC} (in log-log scale). As before, in \Cref{fig:degree-distribution-CC-bar} the distribution is presented as a histogram and in \Cref{fig:degree-distribution-CC-line} as a smoothed discrete pdf. 
 
 \begin{table*}
 	\caption{Number of arrests per year}
@@ -229,6 +230,24 @@ To shed some light about the cumulative distribution of degrees of this network,
 	\centering
 	\label{fig:cumulative-degree-distribution}
 	\includegraphics[width=0.7\textwidth]{cumulative-degree-distribution}
+\end{figure*}
+
+\begin{figure*}
+	\caption{Degree distribution of the largest connected component. In panel (a), the degree distribution as a histogram. In panel (b), as smoothed discrete pdf.}
+	\centering
+	\label{fig:degree-distribution-CC}
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\caption{Histogram}
+		\label{fig:degree-distribution-CC-bar}
+		\includegraphics[width=\textwidth]{degree-distribution-CC-bar}
+	\end{subfigure}\hfill
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\caption{Smoothed discrete pdf}
+		\label{fig:degree-distribution-CC-line}
+		\includegraphics[width=\textwidth]{degree-distribution-CC-line}
+	\end{subfigure}
 \end{figure*}
 
 \end{multicols}
