@@ -64,8 +64,12 @@ In terms of location, these five most notorious crimes occur mainly in county 68
   $$ \text{Contribution}_{\,\text{crime}} = \frac{100}{\text{\# Different counties}_{\,\text{crime}}} $$
 This table shows how concentrated is the distribution of crimes in county 682. In particular, it can be seen that crime 131 is present in almost a half of counties in which the rest of the crimes are. This can explain the abrupt jump in contribution in \Cref{tab:notorious-crimes-county}. 
 
+Now, to create the co-offending network, the library \texttt{networkx} is used. This Python library is useful to compute metrics in an efficient way. Before using this module, the first step is to create the adjacency matrix, using \texttt{scipy}'s sparse matrix class. First, the complete network, including solo offenders is created. A solo offender is a person whose only neighbor in the network is himself. The details of the network are presented in \Cref{tab:network-details}. By construction, the original network (without removing solo offenders) has the same number of self-edges than of nodes (because offenders were arrested with themselves). After removing solo offenders, the total number of self-edges reduces to 121,119, which implies that the total number of solo offenders was 417,732 (= 585,851 - 121,119). From here onwards, the self-edges of the network were removed, to avoid computational and interpretation issues. Consequently, the network will have 538,851 nodes and 178,372 edges. In particular, some nodes will not be connected to any other node.
 
+The degree distribution of this network is particular. In \Cref{fig:degree-distribution} is presented the degree distribution in log-log scale. In \Cref{fig:degree-distribution-bar} is presented as a histogram and in \Cref{fig:degree-distribution-line} as a smoothed discrete pdf. Although the figures do not show a full power law distribution, it is possible to observe a linear behavior up to, approximately, degrees 15 or 20. Afterwards, the plots becomes erratic, as fewer nodes have degrees over these caps.
  
+To shed some light about the cumulative distribution of degrees of this network, \Cref{tab:cumulative-distribution} shows the total of nodes with degree at most $d$, for different values of $d$. For reference, the total number of nodes with positive degree is 121,119.
+
 
 \begin{table*}
 	\caption{Number of arrests per year}
@@ -112,20 +116,20 @@ This table shows how concentrated is the distribution of crimes in county 682. I
 \end{table*}
 
 \begin{figure*}
-	\caption{Total offenses per crime code. In panel (a), all crime codes are considered. In panel (b), only crime codes with a number offenses lower or equal to 5,000. For perspective, the average number of offenses per crime code is 4,869.}
+	\caption{Total offenses per crime code. In panel (a), all crime codes are considered. In panel (b), only crime codes with a number offenses lower or equal to 5,000. For reference, the average number of offenses per crime code is 4,869.}
 	\centering
 	\label{fig:total-offenses-per-crime}
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\caption{All crimes}
 		\label{fig:total-offenses-per-crime-full}
-		\includegraphics[width=0.9\textwidth]{total-offenses-per-crime-full}
+		\includegraphics[width=\textwidth]{total-offenses-per-crime-full}
 	\end{subfigure}\hfill
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\caption{Crimes with 5,000 offenses or less}
 		\label{fig:total-offenses-per-crime-small}
-		\includegraphics[width=0.9\textwidth]{example-image-b}
+		\includegraphics[width=\textwidth]{total-offenses-per-crime-small}
 	\end{subfigure}
 \end{figure*}
 
@@ -161,6 +165,61 @@ This table shows how concentrated is the distribution of crimes in county 682. I
 		61				&	1,084							&	0.09\%			\\[0.2ex]
 		73				&	1,099							&	0.09\%			\\[0.2ex]
 		39				&	1,212							&	0.08\%			\\[0.5ex]
+		\hline\hline
+	\end{tabular}
+\end{table*}
+
+\begin{table*}
+	\caption{Network descriptive statistics}
+	\label{tab:network-details}
+	\centering
+	\begin{tabular}{rcc}
+		\hline\hline
+		\\[-1.5ex]
+						&	With solo offenders	&	Without solo offenders	\\[0.5ex]\hline
+		\\[-1.5ex]
+		Total nodes		&	538,851				&	538,851			\\[0.2ex]
+		Self edges		&	538,851				&	121,119			\\[0.2ex]
+		Non-self edges	&	178,372				&	178,372			\\[0.2ex]
+		Total edges		&	717,223				&	299,491			\\[0.5ex]
+		\hline\hline
+	\end{tabular}
+\end{table*}
+
+\begin{figure*}
+	\caption{Degree distribution of the co-offending network. In panel (a), the degree distribution as a histogram. In panel (b), as smoothed discrete pdf.}
+	\centering
+	\label{fig:degree-distribution}
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\caption{Histogram}
+		\label{fig:degree-distribution-bar}
+		\includegraphics[width=\textwidth]{degree-distribution-bar}
+	\end{subfigure}\hfill
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\caption{Smoothed discrete pdf}
+		\label{fig:degree-distribution-line}
+		\includegraphics[width=\textwidth]{degree-distribution-line}
+	\end{subfigure}
+\end{figure*}
+
+\begin{table*}
+	\caption{Cumulative distribution of degree. Each row shows the number of nodes (and the percentage) that have at most degree $d$, for different values of $d$.}
+	\label{tab:network-details}
+	\centering
+	\begin{tabular}{ccc}
+		\hline\hline
+		\\[-1.5ex]
+		$d$		&	Number of nodes	&	Percentage	\\[0.5ex]\hline
+		\\[-1.5ex]
+		3		&	102,689			&	84.78\%		\\[0.2ex]
+		5		&	112,042			&	92.51%		\\[0.2ex]
+		10		&	117,373			&	178,372		\\[0.2ex]
+		15		&	118,576			&	178,372		\\[0.2ex]
+		20		&	119,134			&	178,372		\\[0.2ex]
+		25		&	119,498			&	178,372		\\[0.2ex]
+		30		&	119,849			&	299,491		\\[0.5ex]
 		\hline\hline
 	\end{tabular}
 \end{table*}
