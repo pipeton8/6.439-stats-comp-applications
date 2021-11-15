@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  15 NOV 2021 12:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  15 NOV 2021 15:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2101,14 +2101,14 @@ Package cleveref Info: loaded `english' language definitions on input line 33.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(50.58878pt, 513.11745pt, 50.58878pt)
-* v-part:(T,H,B)=(57.81621pt, 679.33757pt, 57.81621pt)
+* v-part:(T,H,B)=(50.58878pt, 693.79243pt, 50.58878pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=513.11745pt
-* \textheight=679.33757pt
+* \textheight=693.79243pt
 * \oddsidemargin=-21.68121pt
 * \evensidemargin=-21.68121pt
-* \topmargin=-51.45378pt
+* \topmargin=-58.68121pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -2201,10 +2201,6 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [2]
-
-LaTeX Warning: Reference `fig:cumulative-distribution-CC' on page 1 undefined o
-n input line 75.
-
 File: ./Graphics//total-offenses-per-crime-full.png Graphic file (type bmp)
 <./Graphics//total-offenses-per-crime-full.png>
 File: ./Graphics//total-offenses-per-crime-small.png Graphic file (type bmp)
@@ -2222,7 +2218,8 @@ File: ./Graphics//degree-distribution-CC-line.png Graphic file (type bmp)
 File: ./Graphics//cumulative-degree-distribution-CC.png Graphic file (type bmp)
 
 <./Graphics//cumulative-degree-distribution-CC.png>
-[3] [4] [5] [6] [7] (./Problem Set 4 (Solution).aux
+ [3] [4]
+[5] [6] [7] [8] (./Problem Set 4 (Solution).aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 Package cleveref Info: loaded `spanish' language definitions on input line 25.
@@ -2234,20 +2231,17 @@ Package cleveref Info: loaded `english' language definitions on input line 27.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `"Problem Set 4 (Solution)".out' has not chan
 ged.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 36306 strings out of 476919
- 682499 string characters out of 5821839
- 1118095 words of memory out of 5000000
- 55536 multiletter control sequences out of 15000+600000
+ 36307 strings out of 476919
+ 682523 string characters out of 5821839
+ 1121677 words of memory out of 5000000
+ 55537 multiletter control sequences out of 15000+600000
  446993 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,9n,117p,1827b,693s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 105i,9n,117p,2203b,693s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Problem Set 4 (Solution).pdf (7 pages).
+Output written on Problem Set 4 (Solution).pdf (8 pages).

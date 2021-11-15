@@ -6,7 +6,7 @@
 \usepackage{stfloats}
 \usepackage{mathpazo}
 
-\usepackage[margin=0.8in, left=0.7in, right=0.7in]{geometry}
+\usepackage[margin=0.7in, left=0.7in, right=0.7in]{geometry}
 
 \graphicspath{{./Graphics/}}
 
@@ -70,13 +70,13 @@ The degree distribution of this network is particular. In \Cref{fig:degree-distr
  
 To shed some light about the cumulative distribution of degrees of this network, \Cref{tab:cumulative-degree-distribution} shows the total of nodes with degree at most $d$, for different values of $d$. For reference, the total number of nodes with positive degree is 121,119. As can be seen from the table, almost the entire network (in terms of connected nodes) has degree at most 20, with 98.36\% of all nodes. This means that the right tail is not so heavy. The cumulative distribution is shown in \Cref{fig:cumulative-degree-distribution}.
 
-Now the attention is drawn to the connected components of the network. This network has 36,086 connected components. The smallest one has 2 nodes, while the largest one comprises 19,921 nodes. The latter is, approximately, a 16.45\% of all nodes with positive degree. This largest connected component may include some big criminal organization, and therefore is worth studying separately. Focusing on this largest connected component, the first step is to review the degree distribution. Interestingly, for this sub-network, the degree distribution does not follow a power-law distribution, although there seems to be two linear segments: from degrees 1 to 3, and from degrees 3 to 20. This can be seen in \Cref{fig:degree-distribution-CC} (in log-log scale). As before, in \Cref{fig:degree-distribution-CC-bar} the distribution is presented as a histogram and in \Cref{fig:degree-distribution-CC-line} as a smoothed discrete pdf. 
+Now the attention is drawn to the connected components of the network. This network has 36,086 connected components. The smallest one has 2 nodes, while the largest one comprises 19,921 nodes. The latter is, approximately, a 16.45\% of all nodes with positive degree. This largest connected component may include some big criminal organization, and therefore is worth studying separately. Focusing on this largest connected component, the first step is to review the degree distribution. Interestingly, for this sub-network, the degree distribution does not follow a power-law distribution, although there seems to be two linear segments: from degrees 1 to 3, and from degrees 3 to 20. This can be seen in \Cref{fig:degree-distribution-CC} (in log-log scale). As before, in \Cref{fig:degree-distribution-CC-bar} the distribution is presented as a histogram and in \Cref{fig:degree-distribution-CC-line} as a smoothed discrete pdf.
 
-Following the same exercise as with the whole network, in \Cref{tab:cumulative-degree-distribution-CC} shows the total of nodes with degree at most $d$, for different values of $d$. In this case, the total number of nodes with positive degree is equal to the size of the connected component: 19,921. Comparing this table to \Cref{tab:cumulative-degree-distribution}, it is possible to observe that the cumulative percentage at all levels is lower. This means that the degree distribution of the largest connected component has a heavy right tail. To see this, in \Cref{fig:cumulative-distribution-CC} is presented the cumulative distribution of this connected component (in blue), alongside the one for the whole network (in red). The plot shows that both curves are still very much apart at degree 30 and in fact they coincide almost at degree 100.
+Following the same exercise as with the whole network, in \Cref{tab:cumulative-degree-distribution-CC} shows the total of nodes with degree at most $d$, for different values of $d$. In this case, the total number of nodes with positive degree is equal to the size of the connected component: 19,921. Comparing this table to \Cref{tab:cumulative-degree-distribution}, it is possible to observe that the cumulative percentage at all levels is lower. This means that the degree distribution of the largest connected component has a heavy right tail. To see this, in \Cref{fig:cumulative-degree-distribution-CC} is presented the cumulative distribution of this connected component (in blue), alongside the one for the whole network (in red). The plot shows that both curves are still very much apart at degree 30 and in fact they coincide almost at degree 100.
 
-Finally, another important aspect of this connected component is its shape. Give its size it is not possible to plot, but some descriptive statistics regarding shape can be presented. The diameter of this connected component is 48. This means that the two most separated nodes are at a distance of 48. In the extreme case where this connected component is a line, the diameter would be the number of nodes minus 1, that is 19,920. This is 415 times the diameter obtained. This may imply this network has a more hierarchical structure, which would be expected in an organization. Additionally, the clustering coefficient 0.478. This is large and means that, approximately, half of the triples of connected nodes form a triangle. This could mean that in top of the hierarchical structure, there are groups or ``teams'' which work together in some crimes and that depend on members with higher relevance. This hypothesis may be further sustained due to the edge density of the connected component. In this case the density is, approximately, 0.00036, which is extremely close to 0. For reference, a full graph (a graph in which al nodes are connected) has a density of 1 and, conversely, a graph with no edges has a density of 0. If the hypothesis of the organizational structure were not true, then much more nodes would have connections, as there is no leader commanding the criminal network. Finally, if the organizational hypothesis is true, then there should be some nodes with high betweenness centrality and low degree (the bosses). Although, it is also possible to have \textit{brokers}, this is, individuals that connect two distinct organizations together. This could, in principle, have higher degree if they are connected with several parts of both sub-organizations. In \Cref{tab:betweenness-centrality} is presented the 10 most important nodes in terms of betweenness centrality, along with their degree.
+Finally, another important aspect of this connected component is its shape. Give its size it is not possible to plot, but some descriptive statistics regarding shape can be presented. The diameter of this connected component is 48. This means that the two most separated nodes are at a distance of 48. In the extreme case where this connected component is a line, the diameter would be the number of nodes minus 1, that is 19,920. This is 415 times the diameter obtained. This may imply this network has a more hierarchical structure, which would be expected in an organization. Additionally, the clustering coefficient 0.478. This is large and means that, approximately, half of the triples of connected nodes form a triangle. This could mean that in top of the hierarchical structure, there are groups or ``teams'' which work together in some crimes and that depend on members with higher relevance. This hypothesis may be further sustained due to the edge density of the connected component. In this case the density is, approximately, 0.00036, which is extremely close to 0. For reference, a full graph (a graph in which al nodes are connected) has a density of 1 and, conversely, a graph with no edges has a density of 0. If the hypothesis of the organizational structure were not true, then much more nodes would have connections, as there is no leader commanding the criminal network. Finally, if the organizational hypothesis is true, then there should be some nodes with high betweenness centrality and low degree (the bosses). Although, it is also possible to have \textit{brokers}, this is, individuals that connect two distinct organizations together. This could, in principle, have higher degree if they are connected with several parts of both sub-organizations. In \Cref{tab:betweenness-centrality} are presented the 10 most important nodes in terms of betweenness centrality, along with their degree. The table shows that some of this nodes have low degree and others have large degree. The former might be important individuals in the organization, while the latter might be brokers, connecting different organizations.
 
-\begin{table*}
+\begin{table*}[t]
 	\caption{Number of arrests per year}
 	\label{tab:crimes-per-year}
 	\centering
@@ -280,6 +280,29 @@ Finally, another important aspect of this connected component is its shape. Give
 	\label{fig:cumulative-degree-distribution-CC}
 	\includegraphics[width=0.7\textwidth]{cumulative-degree-distribution-CC}
 \end{figure*}
+
+\begin{table*}
+	\caption{Betweenness centrality of the ten most important nodes. Their degrees are also provided.}
+	\label{tab:betweenness-centrality}
+	\centering
+	\begin{tabular}{ccc}
+		\hline\hline
+		\\[-1.5ex]
+		Node	&	Betweenness centrality	&	Degree	\\[0.5ex]\hline
+		\\[-1.5ex]
+		3		&	0.1218					&	15		\\[0.2ex]
+		5		&	0.1112					&	9		\\[0.2ex]
+		10		&	0.0966					&	9		\\[0.2ex]
+		15		&	0.0793					&	16		\\[0.2ex]
+		20		&	0.0690					&	14		\\[0.2ex]
+		25		&	0.0625					&	22		\\[0.2ex]
+		25		&	0.0553					&	8		\\[0.2ex]
+		25		&	0.0541					&	14		\\[0.2ex]
+		25		&	0.0522					&	10		\\[0.2ex]
+		30		&	0.0496					&	21		\\[0.5ex]
+		\hline\hline
+	\end{tabular}
+\end{table*}
 
 \end{multicols}
 \end{document}
