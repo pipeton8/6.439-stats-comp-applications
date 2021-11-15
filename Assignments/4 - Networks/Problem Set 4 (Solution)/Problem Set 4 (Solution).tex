@@ -68,7 +68,7 @@ Now, to create the co-offending network, the library \texttt{networkx} is used. 
 
 The degree distribution of this network is particular. In \Cref{fig:degree-distribution} is presented the degree distribution in log-log scale. In \Cref{fig:degree-distribution-bar} is presented as a histogram and in \Cref{fig:degree-distribution-line} as a smoothed discrete pdf. Although the figures do not show a full power law distribution, it is possible to observe a linear behavior up to, approximately, degrees 15 or 20. Afterwards, the plots becomes erratic, as fewer nodes have degrees over these caps.
  
-To shed some light about the cumulative distribution of degrees of this network, \Cref{tab:cumulative-distribution} shows the total of nodes with degree at most $d$, for different values of $d$. For reference, the total number of nodes with positive degree is 121,119.
+To shed some light about the cumulative distribution of degrees of this network, \Cref{tab:cumulative-degree-distribution} shows the total of nodes with degree at most $d$, for different values of $d$. For reference, the total number of nodes with positive degree is 121,119. As can be seen from the table, almost the entire network (in terms of connected nodes) has degree at most 20, with 98.36\% of all nodes. This means that the right tail is not so heavy. The cumulative distribution is shown in \Cref{fig:cumulative-degree-distribution}.
 
 
 \begin{table*}
@@ -205,8 +205,8 @@ To shed some light about the cumulative distribution of degrees of this network,
 \end{figure*}
 
 \begin{table*}
-	\caption{Cumulative distribution of degree. Each row shows the number of nodes (and the percentage) that have at most degree $d$, for different values of $d$.}
-	\label{tab:network-details}
+	\caption{Cumulative degree distribution of the co-offending network. Each row shows the number of nodes (and the percentage) that have at most degree $d$, for different values of $d$.}
+	\label{tab:cumulative-degree-distribution}
 	\centering
 	\begin{tabular}{ccc}
 		\hline\hline
@@ -214,15 +214,22 @@ To shed some light about the cumulative distribution of degrees of this network,
 		$d$		&	Number of nodes	&	Percentage	\\[0.5ex]\hline
 		\\[-1.5ex]
 		3		&	102,689			&	84.78\%		\\[0.2ex]
-		5		&	112,042			&	92.51%		\\[0.2ex]
-		10		&	117,373			&	178,372		\\[0.2ex]
-		15		&	118,576			&	178,372		\\[0.2ex]
-		20		&	119,134			&	178,372		\\[0.2ex]
-		25		&	119,498			&	178,372		\\[0.2ex]
-		30		&	119,849			&	299,491		\\[0.5ex]
+		5		&	112,042			&	92.51\%		\\[0.2ex]
+		10		&	117,373			&	96.91\%		\\[0.2ex]
+		15		&	118,576			&	97.90\%		\\[0.2ex]
+		20		&	119,134			&	98.36\%		\\[0.2ex]
+		25		&	119,498			&	98.66\%		\\[0.2ex]
+		30		&	119,849			&	98.95\%		\\[0.5ex]
 		\hline\hline
 	\end{tabular}
 \end{table*}
+
+\begin{figure*}
+	\caption{Cumulative degree distribution of the co-offending network.}
+	\centering
+	\label{fig:cumulative-degree-distribution}
+	\includegraphics[width=0.7\textwidth]{cumulative-degree-distribution}
+\end{figure*}
 
 \end{multicols}
 \end{document}
