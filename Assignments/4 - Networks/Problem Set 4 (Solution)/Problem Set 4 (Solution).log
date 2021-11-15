@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  15 NOV 2021 11:33
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.10.30)  15 NOV 2021 11:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2201,6 +2201,10 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 5
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [2]
+
+LaTeX Warning: Reference `fig:cumulative-distribution-CC' on page 1 undefined o
+n input line 75.
+
 File: ./Graphics//total-offenses-per-crime-full.png Graphic file (type bmp)
 <./Graphics//total-offenses-per-crime-full.png>
 File: ./Graphics//total-offenses-per-crime-small.png Graphic file (type bmp)
@@ -2215,8 +2219,10 @@ File: ./Graphics//degree-distribution-CC-bar.png Graphic file (type bmp)
 <./Graphics//degree-distribution-CC-bar.png>
 File: ./Graphics//degree-distribution-CC-line.png Graphic file (type bmp)
 <./Graphics//degree-distribution-CC-line.png>
- [3] [4]
-[5] [6] (./Problem Set 4 (Solution).aux
+File: ./Graphics//cumulative-degree-distribution-CC.png Graphic file (type bmp)
+
+<./Graphics//cumulative-degree-distribution-CC.png>
+[3] [4] [5] [6] [7] (./Problem Set 4 (Solution).aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 Package cleveref Info: loaded `spanish' language definitions on input line 25.
@@ -2228,17 +2234,20 @@ Package cleveref Info: loaded `english' language definitions on input line 27.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `"Problem Set 4 (Solution)".out' has not chan
 ged.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 36291 strings out of 476919
- 681856 string characters out of 5821839
- 1105698 words of memory out of 5000000
- 55521 multiletter control sequences out of 15000+600000
+ 36306 strings out of 476919
+ 682499 string characters out of 5821839
+ 1108698 words of memory out of 5000000
+ 55536 multiletter control sequences out of 15000+600000
  446993 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,9n,117p,1250b,693s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Problem Set 4 (Solution).pdf (6 pages).
+Output written on Problem Set 4 (Solution).pdf (7 pages).

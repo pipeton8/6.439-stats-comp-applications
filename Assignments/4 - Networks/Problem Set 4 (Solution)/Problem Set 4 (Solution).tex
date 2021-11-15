@@ -72,6 +72,8 @@ To shed some light about the cumulative distribution of degrees of this network,
 
 Now the attention is drawn to the connected components of the network. This network has 36,086 connected components. The smallest one has 2 nodes, while the largest one comprises 19,921 nodes. The latter is, approximately, a 16.45\% of all nodes with positive degree. This largest connected component may include some big criminal organization, and therefore is worth studying separately. Focusing on this largest connected component, the first step is to review the degree distribution. Interestingly, for this sub-network, the degree distribution does not follow a power-law distribution, although there seems to be two linear segments: from degrees 1 to 3, and from degrees 3 to 20. This can be seen in \Cref{fig:degree-distribution-CC} (in log-log scale). As before, in \Cref{fig:degree-distribution-CC-bar} the distribution is presented as a histogram and in \Cref{fig:degree-distribution-CC-line} as a smoothed discrete pdf. 
 
+Following the same exercise as with the whole network, in \Cref{tab:cumulative-degree-distribution-CC} shows the total of nodes with degree at most $d$, for different values of $d$. In this case, the total number of nodes with positive degree is equal to the size of the connected component: 19,921. Comparing this table to \Cref{tab:cumulative-degree-distribution}, it is possible to observe that the cumulative percentage at all levels is lower. This means that the degree distribution of the largest connected component has a heavy right tail. To see this, in \Cref{fig:cumulative-distribution-CC} is presented the cumulative distribution of this connected component (in blue), alongside the one for the whole network (in red). The plot shows that both curves are still very much apart at degree 30 and in fact they coincide almost at degree 100.
+
 \begin{table*}
 	\caption{Number of arrests per year}
 	\label{tab:crimes-per-year}
@@ -248,6 +250,33 @@ Now the attention is drawn to the connected components of the network. This netw
 		\label{fig:degree-distribution-CC-line}
 		\includegraphics[width=\textwidth]{degree-distribution-CC-line}
 	\end{subfigure}
+\end{figure*}
+
+\begin{table*}
+	\caption{Cumulative degree distribution of the largest connected component. Each row shows the number of nodes (and the percentage) that have at most degree $d$, for different values of $d$.}
+	\label{tab:cumulative-degree-distribution-CC}
+	\centering
+	\begin{tabular}{ccc}
+		\hline\hline
+		\\[-1.5ex]
+		$d$		&	Number of nodes	&	Percentage	\\[0.5ex]\hline
+		\\[-1.5ex]
+		3		&	11,937			&	59.92\%		\\[0.2ex]
+		5		&	15,253			&	76.57\%		\\[0.2ex]
+		10		&	17,793			&	89.32\%		\\[0.2ex]
+		15		&	18,433			&	92.53\%		\\[0.2ex]
+		20		&	18,660			&	93.67\%		\\[0.2ex]
+		25		&	18,958			&	94.66\%		\\[0.2ex]
+		30		&	19,009			&	95.42\%		\\[0.5ex]
+		\hline\hline
+	\end{tabular}
+\end{table*}
+
+\begin{figure*}
+	\caption{Cumulative degree distribution of the co-offending network.}
+	\centering
+	\label{fig:cumulative-degree-distribution-CC}
+	\includegraphics[width=0.7\textwidth]{cumulative-degree-distribution-CC}
 \end{figure*}
 
 \end{multicols}
