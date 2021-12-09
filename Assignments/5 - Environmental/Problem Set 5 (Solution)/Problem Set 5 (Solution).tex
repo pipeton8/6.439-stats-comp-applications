@@ -55,11 +55,23 @@ For part (b),
 
 For part (a), consider the squared exponential/RBF covariance function
 	$$\kappa(x_{i}, x_{j}) = \sigma^{2}\exp\left(-\frac{(x_{i} - x_{j})^{2}}{2\ell^{2}}\right).$$
-If the signal variance is increased, then all things equal, points will have a higher covariance. In other words, the covariance curve (as a function of distance $|x_{i} - x_{j}|$) is higher, the higher $\sigma^{2}$ is. This is shown in
+If the signal variance is increased, then all things equal, points will have a higher covariance. In other words, the covariance curve (as a function of distance $|x_{i} - x_{j}|$) is higher, the higher $\sigma^{2}$ is. This is shown in \Cref{fig:rbf-sigma}
 
 \begin{figure*}
-	\caption{Effect of $\sigma^{2}$ and $\ell$ on the RBF covariance function $\kappa(x_{i}, x_{j})$.}
-
+	\caption{Effect of $\sigma^{2}$ and $\ell$ on the RBF covariance function $\kappa(x_{i}, x_{j})$. Panel (a) shows the effect of varying $\sigma^{2}$, when holding $\ell = 1$ constant. In panel (b) it is shown the effect of varying $\ell$, holding $\sigma^{2} = 1$ constant.}
+	\label{rbf}
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\caption{$\ell = 1$}
+		\label{fig:rbf-sigma}
+		\includegraphics[width=\textwidth]{rbf-sigma}
+	\end{subfigure}\hfill
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\caption{$\sigma^{2} = 1$}
+		\label{fig:rbf-ell}
+		\includegraphics[width=\textwidth]{rbf-ell}
+	\end{subfigure}
 \end{figure*}
 
 
