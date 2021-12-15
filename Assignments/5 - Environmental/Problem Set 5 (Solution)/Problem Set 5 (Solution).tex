@@ -46,7 +46,7 @@ For part (c), the main goal is to understand if a Gaussian Process (GP) might be
 
 For part (a), the goal is to implement a procedure to track the position and movement of a particle moving through the ocean flow given by the data. The following approach is considered. Given initial coordinates $(x_0, y_0)$, the movement of the particle is simulated in a second-to-second basis. This is, the new position of the particle is computed every second. The flow that governs the particle's movement is given by the flow of the grid the particle is in, and the current timestamp $T \in \{1, \ldots, 100\}$. Note that computing the movement in this fashion induces a minor estimation error. However, this is negligible given the size of the grid (3 km) and the timeframe considered (300 hours). In \Cref{fig:test-simulations} are presented four simulations with different starting points. The red dot presents the initial point, while the blue lines represent the trajectory.
 
-For part (b),
+For part (b), a toy plane crashed at $T=0$ in the Sulu Sea. The exact location of the crash is unknown, but estimates suggest the location follows a Gaussian distribution with mean (100 km, 350 km) and variance $\sigma^2 I$. The goal is to estimate where the plane debris will be after 48, 72 and 120 hours. The results will be compared when the variance is 25 km, 50 km, and 100 km. In \Cref{fig:toy} are presented the results of simulating samples from each distribution and determining the potential position of the debris for 48, 72 and 120 hours after the crash. In general, the current around the crash site is not intense (see \Cref{fig:flow}) and even after 120 hours, the debris have not moved far. Nevertheless, interesting patterns appear between the images. As expected, the longer the time of the journey, the farthest the debris travel. This implies that the blue lines are longer on the images on the right than the ones on the left. However, the most interesting phenomena is that as the variance increases, the actual location could have been in a more turbulent area of the sea, making the debris move longer distances in a short amount of time. For example, comparing \Cref{fig:toy-48-25} and \Cref{fig:toy-48-50} it is possible to observe that some of the potential trajectories are longer, since the simulated crash occurred in an area where the flow was stronger. 
 
 
 \section*{Problem 5.3: Gaussian Processes}
@@ -150,6 +150,67 @@ This can be done by building $Q$ incrementally in similar fashion as the Gram-Sc
 		\caption{(1320, 1212)}
 		\label{fig:test-simulations-4}
 		\includegraphics[width=0.75\textwidth]{test-simulations-4}
+	\end{subfigure}
+\end{figure*}
+
+\begin{figure*}
+	\caption{Toy plane possible debris location after 48, 72 and 120 hours for different variances. The red dot and circle represent the distribution up to two standard deviations. The blue lines are potential debris trajectories.}
+	\label{fig:toy}
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\caption{48 hours, $\sigma^{2} = 25$.}
+		\label{fig:toy-48-25}
+		\includegraphics[width=\textwidth]{toy-48-25}
+	\end{subfigure}\hfill
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\caption{72 hours, $\sigma^{2} = 25$.}
+		\label{fig:toy-72-25}
+		\includegraphics[width=\textwidth]{toy-72-25}
+	\end{subfigure}
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\caption{120 hours, $\sigma^{2} = 25$.}
+		\label{fig:toy-120-25}
+		\includegraphics[width=\textwidth]{toy-120-25}
+	\end{subfigure}\vspace{2ex}
+	
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\caption{48 hours, $\sigma^{2} = 50$.}
+		\label{fig:toy-48-50}
+		\includegraphics[width=\textwidth]{toy-48-50}
+	\end{subfigure}\hfill
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\caption{72 hours, $\sigma^{2} = 50$.}
+		\label{fig:toy-72-50}
+		\includegraphics[width=\textwidth]{toy-72-50}
+	\end{subfigure}
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\caption{120 hours, $\sigma^{2} = 50$.}
+		\label{fig:toy-120-50}
+		\includegraphics[width=\textwidth]{toy-120-50}
+	\end{subfigure}\vspace{2ex}
+	
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\caption{48 hours, $\sigma^{2} = 100$.}
+		\label{fig:toy-48-100}
+		\includegraphics[width=\textwidth]{toy-48-100}
+	\end{subfigure}\hfill
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\caption{72 hours, $\sigma^{2} = 100$.}
+		\label{fig:toy-72-100}
+		\includegraphics[width=\textwidth]{toy-72-100}
+	\end{subfigure}
+	\begin{subfigure}{0.33\textwidth}
+		\centering
+		\caption{120 hours, $\sigma^{2} = 25$.}
+		\label{fig:toy-120-100}
+		\includegraphics[width=\textwidth]{toy-120-100}
 	\end{subfigure}
 \end{figure*}
 
