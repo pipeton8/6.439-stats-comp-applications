@@ -44,7 +44,7 @@ For part (c), the main goal is to understand if a Gaussian Process (GP) might be
 
 \section*{Problem 5.2: Predicting Trajectories}
 
-For part (a),
+For part (a), the goal is to implement a procedure to track the position and movement of a particle moving through the ocean flow given by the data. The following approach is considered. Given initial coordinates $(x_0, y_0)$, the movement of the particle is simulated in a second-to-second basis. This is, the new position of the particle is computed every second. The flow that governs the particle's movement is given by the flow of the grid the particle is in, and the current timestamp $T \in \{1, \ldots, 100\}$. Note that computing the movement in this fashion induces a minor estimation error. However, this is negligible given the size of the grid (3 km) and the timeframe considered (300 hours). In \Cref{fig:test-simulations} are presented four simulations with different starting points. The red dot presents the initial point, while the blue lines represent the trajectory.
 
 For part (b),
 
@@ -80,7 +80,6 @@ This can be done by building $Q$ incrementally in similar fashion as the Gram-Sc
 		\includegraphics[width=\textwidth]{flow-speed-2}
 	\end{subfigure}
 \end{figure*}
-
 
 \begin{figure*}
 	\caption{Spatial correlations for coordinates (420 km, 345 km) and (1200 km, 1200 km). Panels (a)-(c) show the correlations of the first coordinate and its surroundings for horizontal flow, vertical flow, and speed, respectively. Analogously, panels (d)-(f) show the same for the second coordinate. In all panels, the green dot represents the corresponding coordinate.}
@@ -121,6 +120,36 @@ This can be done by building $Q$ incrementally in similar fashion as the Gram-Sc
 		\caption{Speed.}
 		\label{fig:coord-2-s}
 		\includegraphics[width=\textwidth]{coord-2-s}
+	\end{subfigure}
+\end{figure*}
+
+\begin{figure*}
+	\caption{Simulation of trajectories of a particle subject to the ocean flow, from a given initial coordinate. The red dot represents the starting point and the blue line represents the journey of the particle.}
+	\label{fig:test-simulations}
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\caption{(300, 462)}
+		\label{fig:test-simulations-1}
+		\includegraphics[width=0.75\textwidth]{test-simulations-1}
+	\end{subfigure}\hfill
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\caption{(600, 1362)}
+		\label{fig:test-simulations-2}
+		\includegraphics[width=0.75\textwidth]{test-simulations-2}
+	\end{subfigure}\vspace{2ex}
+
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\caption{(1320, 252)}
+		\label{fig:test-simulations-3}
+		\includegraphics[width=0.75\textwidth]{test-simulations-3}
+	\end{subfigure}\hfill
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\caption{(1320, 1212)}
+		\label{fig:test-simulations-4}
+		\includegraphics[width=0.75\textwidth]{test-simulations-4}
 	\end{subfigure}
 \end{figure*}
 
